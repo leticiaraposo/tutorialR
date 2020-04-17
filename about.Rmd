@@ -2,4 +2,10 @@
 title: "Untitled"
 ---
 
-olá
+https://raposo.shinyapps.io/diretorio/
+
+<!---LEARNR EX 1-->
+
+<iframe class="interactive" id="myIframe1" src="https://raposo.shinyapps.io/diretorio/" scrolling="no" frameborder="no"></iframe>
+
+<!------------->
