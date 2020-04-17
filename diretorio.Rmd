@@ -63,12 +63,6 @@ Hora de Praticar!
 
 Aproveite o código e mude agora o seu diretório para a pasta desejada. Basta substituir o caminho abaixo. Feito isso, clique no botão `Run Code`. Se não aparecer nenhuma mensagem de erro, a mudança foi realizada com sucesso. <i class="fas fa-thumbs-up"></i>
 
-<!---LEARNR EX 2-->
-
-<iframe class="interactive" id="myIframe2" src="https://raposo.shinyapps.io/diretorio2/" scrolling="no" frameborder="no"></iframe>
-
-<!-------------> 
-
 <script>
   iFrameResize({}, ".interactive");
 </script>

@@ -1,16 +1,6 @@
 ---
 title: "Untitled"
 output:
-  bookdown::html_document2
+  bookdown::html_document2:
+    toc: false
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, fig.align="center")
-library(here)
-```
-
-<!---LEARNR EX 1-->
-
-<iframe class="interactive" id="myIframe1" src="https://raposo.shinyapps.io/diretorio/" scrolling="no" frameborder="no"></iframe>
-
-<!------------->
