@@ -1,5 +1,14 @@
 ---
-title: "Untitled"
+title: "Bem-vindo(a)!"
 ---
 
-olá
+<br>
+
+Olá, este tutorial foi preparado para você colocar a mão na massa e aprender de uma maneira fácil e divertida a explorar as principais potencialidades do R.
+
+Vamos ver aqui os principais conteúdos ensinados em um curso de estatística, como leitura de dados, análise exploratória, testes de hipóteses... Ao longo do tutorial, perguntas e exercícios aparecerão para você praticar o que aprender. 
+
+<span style="color: #75aadb; font-size:14pt;font-style:italic;font-weight:bold;">
+Então chega de conversa e vamos nos aventurar!</span>
+
+

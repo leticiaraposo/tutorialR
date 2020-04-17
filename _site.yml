@@ -1,27 +1,23 @@
-name: "cars"
+name: "tutorialR"
 output_dir: "docs"
 navbar:
   title: " "
   left:
-  - icon: "fa-home"
+  - icon: Início
     href: index.html
-  - text: "History of Teacup Giraffes"
-    href: 00_narrative.html
-  - text: "Modules"
+  - text: "Módulos"
     menu:
-      - text: "Intro to R"
-        href: 01_introToR.html
-      - text: "Intro to the Normal Distribution"
-        href: 02_bellCurve.html
-      - text: "Mean, Median, Mode"
-        href: 03_mean.html
-      - text: "Spread of the Data"
-        href: 04_variance.html
-      - text: "Covariance and Correlation"
-        href: 05_correlation.html
-      - text: "Standard Error"
-        href: 06_standardError.html
-  - text: "About the Authors"
+      - text: "Definindo um Diretório"
+        href: diretorio.html
+      - text: "Leitura de Dados"
+        href: leitura.html
+      - text: "Pré-processamento de Dados"
+        href: preprocessamento.html
+      - text: "Análise Descritiva Univariada"
+        href: univariada.html
+      - text: "Análise Descritiva Bivariada"
+        href: bivariada.html
+  - text: "Sobre"
     href: about.html
   right:
   - icon: "fa-github"
@@ -30,5 +26,5 @@ output:
   bookdown::html_document2:
     toc: true
     toc_float: true
-    theme: cosmo
+    theme: journal
     number_sections: false

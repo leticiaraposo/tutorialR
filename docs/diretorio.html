@@ -11,7 +11,7 @@
 
 
 
-<title>Bem-vindo(a)!</title>
+<title>Definindo um diretório</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -399,16 +399,60 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Bem-vindo(a)!</h1>
+<h1 class="title toc-ignore">Definindo um diretório</h1>
 
 </div>
 
 
-<p><br></p>
-<p>Olá, este tutorial foi preparado para você colocar a mão na massa e aprender de uma maneira fácil e divertida a explorar as principais potencialidades do R.</p>
-<p>Vamos ver aqui os principais conteúdos ensinados em um curso de estatística, como leitura de dados, análise exploratória, testes de hipóteses… Ao longo do tutorial, perguntas e exercícios aparecerão para você praticar o que aprender.</p>
-<p><span style="color: #75aadb; font-size:14pt;font-style:italic;font-weight:bold;">
-Então chega de conversa e vamos nos aventurar!</span></p>
+<p>Oi de novo! Antes de iniciarmos o tutorial, vamos deixar instalados alguns pacotes fundamentais para executarmos todas as etapas detalhadas aqui?</p>
+<p>Tá, já sei! Não expliquei o que é pacote, não é mesmo?</p>
+<p style="border:1px; border-style:solid; background-color: #ebf3fa; border-left: 6px solid red; border-color:#75aadb; padding: 1em;">
+<em>Pacotes, também chamados de bibliotecas, são conjuntos de códigos, dados, documentações e testes que visam realizar funções específicas dentro do R. Basicamente, todas as funções que iremos utilizar no R são provenientes de diferentes pacotes.</em>
+</p>
+<p>Para instalar um pacote, a funcão utilizada é a <a href="https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/install.packages"><code>install.packages()</code></a>. Basta colocar o nome do pacote dentro da função usando aspas. Por exemplo, <code>install.packages("carData")</code>.</p>
+<p>Para este tutorial, vamos precisar dos seguintes pacotes:</p>
+<ul>
+<li><code>carData</code></li>
+<li><code>nycflghts13</code></li>
+<li><code>dlookr</code></li>
+<li><code>summarytools</code></li>
+</ul>
+<p>Vai lá! Abra o seu RStudio e instale os pacotes! Ficarei aqui te esperando!</p>
+<p>Agora que você já os instalou, vamos começar?!</p>
+<div id="diretório" class="section level1">
+<h1>Diretório</h1>
+<p>Sempre que vamos iniciar um trabalho, é recomendado criarmos uma pasta em algum local do nosso computador para que os arquivos relacionados sejam armazenados. Trabalhar no R funciona da mesma forma. Esse local é o que chamamos de diretório.</p>
+<p>O R sempre inicia com um diretório definido. Para saber se o diretório corresponde à pasta na qual você deseja armazenar seu trabalho, utilize a função <a href="https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/getwd"><code>getwd()</code></a>. Ela informa o caminho completo do diretório atual.</p>
+<p><i class="fas fa-pen"></i>
+<span style="color: #75aadb; font-size:12pt;font-style:italic;font-weight:bold;">
+Hora de Praticar!
+</span></p>
+<p>Sabendo disso, vamos verificar qual o diretório atual? Utilize o espaço abaixo digitando a função recém aprendida. Para visualizar se a resposta está correta, clique no botão <code>Submit Answer</code>.</p>
+<!---LEARNR EX 1-->
+<iframe class="interactive" id="myIframe1" src="https://raposo.shinyapps.io/diretorio/" scrolling="no" frameborder="no">
+</iframe>
+<!------------->
+<p>Agora que você já sabe ver o diretório atual, que tal o modificarmos colocando o caminho da nossa pasta de trabalho?
+Vá até a sua pasta de interesse. Em seguida, basta clicar na janela da mesma forma como é feito no exemplo abaixo. O computador irá fornecer o caminho da pasta.</p>
+<p><img src="diretorio.png" /></p>
+<p>Infelizmente, o R só aceita as barras nos seguintes formatos: <code>\\</code> ou <code>/</code>. A decisão é sua! Mude a direção da barra ou acrescente mais uma em cada parte do caminho.
+No meu caso, o caminho ficou: <code>C:\\Users\\Leticia\\Google Drive\\UNIRIO\\Disciplinas Ministradas\\2019.2\\Biologia - Biomedicina</code></p>
+<p>Agora que temos o caminho da pasta que desejamos tornar o diretório, iremos utilizar a função <a href="https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/getwd"><code>setwd()</code></a>.
+O caminho é colocado dentro da função usando aspas no início e no final.
+No código abaixo está a mudança para o meu diretório.</p>
+<p><i class="fas fa-pen"></i>
+<span style="color: #75aadb; font-size:12pt;font-style:italic;font-weight:bold;">
+Hora de Praticar!
+</span></p>
+<p>Aproveite o código e mude agora o seu diretório para a pasta desejada. Basta substituir o caminho abaixo. Feito isso, clique no botão <code>Run Code</code>. Se não aparecer nenhuma mensagem de erro, a mudança foi realizada com sucesso. <i class="fas fa-thumbs-up"></i></p>
+<!---LEARNR EX 2-->
+<iframe class="interactive" id="myIframe2" src="https://raposo.shinyapps.io/diretorio2/" scrolling="no" frameborder="no">
+</iframe>
+<!------------->
+<script>
+  iFrameResize({}, ".interactive");
+</script>
+</div>
 
 
 
