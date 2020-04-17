@@ -1,0 +1,73 @@
+<head>
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135221736-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-135221736-1');
+	</script>
+	
+	<!-- Clickable Giraffe -->
+  <script>
+    $(document).ready(function() {
+      $('.giraffe-container').click(function() {
+        $('body').addClass('expanded');
+      });
+    });
+  </script>
+	
+	<!-- CSS -->
+	<link href="assets/landing.css" rel="stylesheet">
+  <link href="assets/button.css" rel="stylesheet">
+  <link href="assets/mobile_landing.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="preload">
+    <img src="images/Landing_page/g1_1200px.jpg">
+  </div>
+  <section class="landing container">
+    <section class="giraffe-container" >
+      <div class="singleGiraffe-clickme"></div>
+      <div class="singleGiraffe-clickme-hover"></div>
+      <div class="giraffeForest">
+        <div class="g1 opacity-after-click"></div>
+      </div>
+      <div class="singleGiraffe"></div>
+      <section class="image-descript"> 
+      	<div class="image-text">
+      		<div class="landing small-text">Welcome to the Wonderful World of</div>
+      		<div class="landing big-text"><strong>TEACUPS, GIRAFFES, & STATISTICS</strong></div>
+      	</div>
+      </section>
+    </section>
+    
+    <div class="appears-after-click">
+      <div class="about">A delightful series of modules to learn statistics and R coding for students, scientists, and stats-enthusiasts.</div>
+      <div class="landing-buttons"> 
+        <a id="container" href="00_narrative.html">
+          <button class="learn-more">
+            <span class="circle">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Read the History of Teacup Giraffes</span>
+          </button>
+        </a>
+        <a id="container" href="01_introToR.html">
+          <button class="learn-more deemphasized">
+            <span class="circle">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Skip Straight to the Stats</span>
+          </button>
+        </a>
+      </div>
+      
+      
+    </div>
+  </section>
+</body>
+

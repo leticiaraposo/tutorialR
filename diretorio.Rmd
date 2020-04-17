@@ -1,7 +1,10 @@
 ---
 title: "Definindo um diretório"
 output:
-  bookdown::html_document2
+  bookdown::html_document2:
+    includes:
+      in_header: assets/01_introToR_image.html
+      after_body: assets/foot.html
 ---
 
 Oi de novo! Antes de iniciarmos o tutorial, vamos deixar instalados alguns pacotes fundamentais para executarmos todas as etapas detalhadas aqui?

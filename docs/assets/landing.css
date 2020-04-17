@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i&display=swap');
+
+/*Loads background-images in HTML as <img> tags, so that they are already loaded when animated to display later*/
+#preload {
+  display: none;
+}
+
+/* JS appear: */
+/* After clicking, the class `.expanded` is added to the body tag, which applies the styles below to the elements below */
+
+body.expanded .image-descript {
+  display: flex;
+}
+body.expanded .singleGiraffe-clickme {
+  display: none;
+}
+body.expanded .singleGiraffe {
+  display: block;
+}
+body.expanded .giraffeForest {
+  display: block;
+}
+    
+
+
+/*------------NARRATIVE-----------*/
+
+.narrative-container {
+  max-width: 650px;
+  margin: 4em auto;
+}
+
+.narrative-cover {
+  text-align: center;
+  margin: 0 auto 2em auto;
+  max-width: 650px;
+  background-color: white;
+}
+
+.narrative-illo-200 {
+  max-width: 200px !important;
+  display: inline-block !important;
+  margin: 0.5em 1em 0.5em 0.5em;
+}
+.narrative-illo-small {
+  max-width: 350px !important;
+  display: inline-block !important;
+  margin: 0.5em 1em 0.5em 0.5em;
+}
+.narrative-illo-big {
+  display: block !important;
+  max-width: 90% !important;
+  margin: 0.5em auto;
+}
+
+.narrative-text {
+  font-family: "Source Sans Pro";
+  line-height: 1.75;
+}
+
+.dialogue {
+  text-indent: 2em;
+}
+
+p.blockquote{
+  background: #fcf8f0;
+  border-left: 10px solid #f2e0c3;
+  padding: 1.5em 10px;
+  font-family: "Lora";
+  font-style: italic;
+  font-size: 0.85em;
+  margin: 1em 2em 1em 2em !important;
+}
+
+.slide-content > .narrative-text > p:first-of-type:first-letter { /*drop cap for first p that is a direct child of .narrative-text, which is in turn a direct child of .slide-content*/
+  color: #3fb5bd;
+  float: left;
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  font-size: 7em;
+  line-height: 65px;
+  padding: 20px 8px 0 3px;
+  margin-bottom: 9px;
+}
+
+.narrative-text p {
+  margin-bottom: 1.5em;
+}
+
+.slide-content { /* space separating each "chapter" */
+  margin-bottom: 3em;
+}
+
+.end-text{
+  text-align: center;
+  margin-top: 100px 0 50px 0;
+  font-size: 3em;
+  font-family: 'Lora';
+  font-weight: 600;
+  color: #3fb5bd;
+}
+
+
+/*------------NAVBAR-------------*/
+.navbar-default {
+  background-color: #ffffff33;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.76);
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff, #ffffffed, #ffffffba, #ffffff33) !important;
+  border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: black;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus
+/*.navbar-default .navbar-nav>li>a:hover,*/
+/*.navbar-default .navbar-nav>li>a:focus */{
+    color: #989898;
+    background-color: #ffffff33;
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff, #ffffffed, #ffffffba, #ffffff33) !important;
+}
+
+/* Hovering over navbar + dropdown */
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus{
+    color: #989898;
+    background-color: white;
+}
+
+
+/* hamburger menu on mobile */
+
+.icon-bar {
+  background-color: black !important;
+}
+
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
+    background-color: #ffffff !important;
+}
+
+
+/* Whole document: */
+
+body {
+	font-size: 19px;
+}
+
+.title{
+  display: none;
+}
+
+.main-container {
+	max-width: 1326px !important;
+  }
+
+
+ .container-fluid {                  /* margin: 0 Left-aligns container; margin: auto to "center" (Default)*/
+    margin-right: auto !important; 
+    margin-left: auto !important;
+} 
+
+.row-fluid{
+  display: flex;
+  position: relative;
+}
+
+.col-xs-12 .col-sm-4 .col-md-3{
+  width: 25%;
+  position: relative;
+}
+
+.tocify-extend-page {
+  height: 0px !important; /* Gets rid of extra space after footer*/
+}
+
+
+body, html {
+  height: 100%;
+}
+
+
+/*@media screen and (max-width: 300px) {
+ .image-descript {
+  display: none;
+ }*/
+
+
+
+/* --------------v2 Landing Page---------------*/
+
+.landing-container {
+  max-width: 700px;
+}
+
+  .giraffe-container {
+    height: 500px;
+    margin: 0.5em auto 0em auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+    .singleGiraffe-clickme {
+      height: 400px;
+      width: 354px;
+      left: 52%;
+      margin-left: -177px; /*half the container's width*, along with left: 50%*/
+      position: absolute;
+      display: block;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+      background-image: url("../images/Landing_page/singleGiraffe-clickme.jpg");
+    }
+
+    .singleGiraffe-clickme-hover {
+      height: 400px;
+      width: 354px;
+      left: 52%;
+      margin-left: -177px; /*half the container's width*, along with left: 50%*/
+      position: absolute;
+      display: block;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+      background-image: url("../images/Landing_page/singleGiraffe-clickme-hover.jpg");
+      opacity: 0;
+    }
+    
+    .singleGiraffe-clickme-hover:hover {
+      opacity: 1;
+    }
+
+    .singleGiraffe {
+      height: 400px;
+      width: 354px;
+      left: 52%;
+      margin-left: -177px; /*half the container's width*, along with left: 50%*/
+      position: absolute;
+      display: none;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;  
+      background-image: url("../images/Landing_page/singleGiraffe.png");
+      animation: slide-up 1s forwards;
+    }
+
+    .giraffeForest {
+      position: absolute;
+      height: 500px;
+      width: 1200px;
+      left: 50%;
+      margin-left: -600px;
+      display: none;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center; 
+    }
+    
+    .g1 {
+      display: block;
+      height: 500px;
+      background-image: url('../images/Landing_page/g1_1200px.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation: slide-in-from-top 1s forwards;
+    }
+    
+     @keyframes slide-up {
+      0% { opacity: 1; transform: translateY(0px); }
+      100% { opacity: 1; transform: translateY(-15px); }
+    }
+    
+    @keyframes slide-in-from-bottom {
+      0% { opacity: 0; transform: translateY(100px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    
+     @keyframes slide-in-from-top {
+      0% { opacity: 0; transform: translateY(-100px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes slide-in-from-right{
+      0% { opacity: 0; transform: translateX(100px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+    
+    @keyframes slide-in-from-left {
+      0% { opacity: 0; transform: translateX(100px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+
+.image-descript {
+  position: relative;
+  display: none;
+  animation: slide-in-from-bottom 1s forwards;
+  justify-content: center; /* flex horizontal center */
+  align-items: center; /*flex vertical center*/
+}
+ .big-text {
+    text-align: center;
+    color: #ffffff;
+    visibility: visible;
+    font-size: 3em;
+    text-shadow: 1px 1px 35px #0e0d0d38;
+    letter-spacing: 0.065em;
+  }
+  .small-text { 
+      color: white;
+      margin: 0 auto 5px auto;
+      text-align: center; 
+      display:block;
+      font-family: 'Lora', serif;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1.5em;
+      letter-spacing: 1px;
+      font-style: italic;
+      text-shadow: 1px 1px 35px #0e0d0d38;
+    }
+
+
+/*------ LANDING WELCOME INFO----- */
+
+.appears-after-click {
+  display: none;
+}
+
+.appears-after-click .about {
+  text-align: center;
+  font-family: "Source Sans Pro";
+  font-size: 1.2em;
+  color: #707070;
+  max-width: 725px;
+  margin: 0 auto 1em auto;
+}
+
+
+
+
+/* Tablet */
+@media only screen and (min-width: 480px) and (max-width: 540px) {
+  .toc-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 649px) {
+  .toc-content {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (min-width: 650px) and (max-width: 767px) {
+  .toc-content {
+    width: 100%;
+  }
+}
+
+
+/*iPad portrait*/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .toc-content {
+    width: 100%;
+  }
+}
+
+
+/*iPad Pro portarit */
+
+@media only screen and (min-width: 1024px) and (max-width: 1225px) {
+  .toc-content {
+    width: 100%;
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .col-xs-12.col-sm-4.col-md-3 {
+    display: none !important;
+  }
+}
+
+
+/* New hero images */
+
+.hero-container {
+  height: 550px;
+  background-color: #1b3a42;
+  margin-bottom: 2em;
+}
+
+.hero-image {
+  max-width: 1800px;
+  margin-top: -50px !important;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-bottom: 2em;
+  background-image: linear-gradient( rgba(0,0,0,.2), rgba(0,0,0,.2) ),
+  url(../images/big_image/Log.jpg); /* liner gradient tints the image darker for readability*/
+  height: 550px;
+  background-size: cover;
+  background-color: #1b3a42;
+  background-position: center bottom;
+  display: flex; /* Change to `display: none` for no hero image */
+  justify-content: center;
+  align-items: center;
+}
+
+
+.hero-image-text-little {
+  position: relative;
+  font-family: 'Lora', serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-image-text-big {
+  position: relative;
+  letter-spacing: 0.065em;
+  line-height: 1em;
+  font-size: 68px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  color: #fff;
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 770px) {
+  .hero-image-text-big{
+    font-size: 3rem;
+    padding: 2rem 0rem 0rem 0rem;
+  }
+
+  .hero-image-text-little{
+    font-size: 19px;
+  }
+  
+  .hero-image {
+    max-width: 770px;
+    height: 300px;
+  }
+  
+    .hero-container {
+    height: 300px;
+    background-color: #1b3a42;
+    margin-bottom: 1em;
+  }
+  
+  .toc-content.col-xs-12.col-sm-8.col-md-9{
+    width: 100%;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+}
+
+
