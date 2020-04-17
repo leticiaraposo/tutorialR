@@ -22,7 +22,7 @@ navbar:
       - text: "Standard Error"
         href: 06_standardError.html
   - text: "About the Authors"
-    href: aboutTheAuthors.html
+    href: about.html
   right:
   - icon: "fa-github"
     href: https://github.com/tinystats/teacups-giraffes-and-statistics

@@ -1,8 +1,13 @@
 ---
 title: "Untitled"
+output:
+  bookdown::html_document2
 ---
 
-https://raposo.shinyapps.io/diretorio/
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.align="center")
+library(here)
+```
 
 <!---LEARNR EX 1-->
 
